@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html lang="en" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><html lang="en"><![endif]-->
+<!--[if !IE]><html lang="en-US"><![endif]-->     
+   <!--
+    ***********************************************************************************
+    	
+    	Atom Groom - Sample code for Hireology
+    	
+    ***********************************************************************************
+    	
+    	Designed and Built by Atom Groom - http://www.atomgroom.com
+    	All content, design, markup, and css (C) Atom Groom Design, Inc.
+    	All rights reserved.
+    
+    ***********************************************************************************
+    -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atom Groom - Sample code for Hireology">
+    <meta name="author" content="Atom Groom">
+    <link rel="shortcut icon" href="img/ico/favicon.png">
+    <title>Atom Groom - Code Sample - Hireology</title>
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/styles.css" rel="stylesheet">
+    <script src="javascripts/modernizr-2.6.2-respond-1.1.0.min.js"></script>  
+    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="javascripts/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<div class="container"><!-- Main Container -->
+    <!-- Global Header -->
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="col-md-6 navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/logo-hireology.png" alt="Hireology" /></a>
+                </div>
+                <div class="navbar-collapse collapse global-nav col-md-3">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Welcome</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Candidates</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li>
+                        <div class="dropdown app-settings-nav clearfix col-sm-12 col-md-3">
+                            <div class="app-settings-nav-heading"><span class="icon-cog"></span>Settings</div>
+                            <ul>
+                                <li><a href="/company_profiles/edit_company_profile"><span class="icon-wrench"></span>Settings</a></li>
+                                <li><a href="/company_profiles/my_info"><span class="icon-user"></span>My Info</a></li>
+                                <li><a href="/accounts"><span class="icon-users"></span>Users</a></li>
+                                <li><a href="/accounts/details"><span class="icon-key"></span>Account</a></li>
+                                <li><a href="/sign_out"><span class="icon-exit"></span>Sign Out</a></li>
+                            </ul>
+                        </div>               
+                      </li>        
+                  </ul>
+                </div>
+            </div>   
+        </nav>      
+    </header>
+    <!-- Main Content Area  -->
+    <div class="row alpha">
+        <section class="col-md-12 siteSearch">
+            <section class="breadCrumb col-xs-12 col-sm-5">
+                <a title="Home Page" href="#">Home</a> <span>></span> <a title="Products" href="#">Products</a> <span>></span>  Salary Report
+            </section>
+            <form method="post" class="searchForm pull-right col-xs-12 col-sm-5" action="search/" autocomplete="off">
+                <input type="text" placeholder="Search Jobs &amp; Candidates" class="searchTextInput col-sm-12" name="searchBox" autocomplete="off">
+                <input type="submit" class="searchSubmitButton" value="">
+                <span class="icon-search searchSubmitIcon"></span>
+            </form>   
+        </section>
+        <!-- Left Content Area -->
+        <main class="col-sm-9">
+        <h1>Salary Report</h1>
+        <p>PayScale has collected over 36 million salary profiles providing updatetd compensation data for over 14,000 unique job titles. Enter the details of the position you'd like to price in order to receive your PayScale report: <a href="#">View Sample</a>.</p>       
+        <form id="orderForm" action="#" method="post" novalidate="novalidate">
+            <fieldset>
+                <legend>Order Form</legend>             
+                <div class="formSection">
+                    <label for="payscale_report_employer_type">Employer Name:</label>
+                    <select id="payscale_report_employer_type" name="payscale_report_employer_type">
+                        <option value="">Please select...</option>
+                        <option value="Not Specified">Not Specified</option>
+                        <option value="Company">Company</option>
+                        <option value="College / University">College / University</option>
+                        <option value="Government - Federal">Government - Federal</option>
+                        <option value="Government - State &amp; Local">Government - State &amp; Local</option>
+                        <option value="Hospital">Hospital</option>
+                        <option value="Non-Profit Organization">Non-Profit Organization</option>
+                        <option value="Private Practice/Firm">Private Practice/Firm</option>
+                        <option value="School / School District">School / School District</option>
+                    </select>
+                </div>    
+                <div class="formSection">
+                    <label for="payscale_report_company_size">Number of Employees:</label>
+                    <select id="payscale_report_company_size" name="payscale_report[company_size]">
+                        <option value="">Please select...</option>
+                        <option value="1-50">1-50</option>
+                        <option value="51-200">51-200</option>
+                        <option value="201-500">201-500</option>
+                        <option value="501-1000">501-1000</option>
+                        <option value="1000-More">1000 +</option>
+                    </select>
+                </div>             
+                <div class="formSection">
+                    <label for="payscale_report_industry">Industry:</label>    
+                    <select id="payscale_report_industry" name="payscale_report[industry]">
+                        <option value="">Please select...</option>
+                        <option value="Accounting / Auditing Firm">Accounting / Auditing Firm</option>
+                        <option value="Aerospace and Defense">Aerospace and Defense</option>
+                        <option value="Architecture">Architecture</option>
+                        <option value="Automotive Dealership">Automotive Dealership</option>
+                        <option value="Banking">Banking</option>
+                        <option value="Biotechnology">Biotechnology</option>
+                        <option value="Child Care / Day Care">Child Care / Day Care</option>
+                        <option value="Commercial Aviation / Airline">Commercial Aviation / Airline</option>
+                        <option value="Commercial Printing">Commercial Printing</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Consultancy">Consultancy</option>
+                        <option value="Education">Education</option>
+                        <option value="Energy / Utilities">Energy / Utilities</option>
+                        <option value="Engineering Consulting">Engineering Consulting</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Financial Services">Financial Services</option>
+                        <option value="Food Manufacturing">Food Manufacturing</option>
+                        <option value="Food Service">Food Service</option>
+                        <option value="Government">Government</option>
+                        <option value="Hair and Beauty Salons">Hair and Beauty Salons</option>
+                        <option value="Health Care Services">Health Care Services</option>
+                        <option value="Hospitals">Hospitals</option>
+                        <option value="Hotel / Hotels">Hotel / Hotels</option>
+                        <option value="Human Resources Consulting Services">Human Resources Consulting Services</option>
+                        <option value="Information Technology (IT) Services">Information Technology (IT) Services</option>
+                        <option value="Insurance">Insurance</option>
+                        <option value="Law Enforcement">Law Enforcement</option>
+                        <option value="Law Firm / Law Office">Law Firm / Law Office</option>
+                        <option value="Legal Services">Legal Services</option>
+                        <option value="Logistic Services">Logistic Services</option>
+                        <option value="Manufacturing and Distribution">Manufacturing and Distribution</option>
+                        <option value="Marketing, Advertising &amp; Media Management">Marketing, Advertising &amp; Media Management</option>
+                        <option value="Medical Office">Medical Office</option>
+                        <option value="Nursing Home">Nursing Home</option>
+                        <option value="Pharmaceuticals">Pharmaceuticals</option>
+                        <option value="Pharmacy">Pharmacy</option>
+                        <option value="Project Management">Project Management</option>
+                        <option value="Public Safety">Public Safety</option>
+                        <option value="Publishing">Publishing</option>
+                        <option value="Real Estate">Real Estate</option>
+                        <option value="Religion">Religion</option>
+                        <option value="Retail">Retail</option>
+                        <option value="Retail/Wholesale Distribution">Retail/Wholesale Distribution</option>
+                        <option value="Social Services">Social Services</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Telecommunicaitons">Telecommunicaitons</option>
+                        <option value="Television Broadcasting">Television Broadcasting</option>
+                        <option value="Transportation">Transportation</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Veterinary Care">Veterinary Care</option>
+                    </select> 
+                </div>               
+                <div class="formSection">
+                    <label for="payscale_report_job_title"><span class="requiredItem">*</span> Job Title:</label>
+                    <input class="textInput" id="payscale_report_job_title" name="payscale_report[job_title]" size="30" type="text" value="" data-validate="validate(required)">       
+                </div>                
+                <div class="formSection">
+                    <label for="payscale_report_city"><span class="requiredItem">*</span> City:</label>
+                    <input class="textInput" id="payscale_report_city" name="payscale_report[city]" size="30" type="text" value="" data-validate="validate(required)">
+                </div>           
+                <div class="formSection">
+                    <label for="payscale_report_state_id">State:</label>
+                    <select id="payscale_report_state_id" name="payscale_report[state_id]">
+                        <option value="0" selected="selected">Please Select...</option>
+                        <option value="1">AL</option>
+                        <option value="2">AK</option>
+                        <option value="3">AZ</option>
+                        <option value="4">AR</option>
+                        <option value="5">CA</option>
+                        <option value="6">CO</option>
+                        <option value="7">CT</option>
+                        <option value="8">DE</option>
+                        <option value="9">DC</option>
+                        <option value="10">FL</option>
+                        <option value="11">GA</option>
+                        <option value="12">HI</option>
+                        <option value="13">ID</option>
+                        <option value="14">IL</option>
+                        <option value="15">IN</option>
+                        <option value="16">IA</option>
+                        <option value="17">KS</option>
+                        <option value="18">KY</option>
+                        <option value="19">LA</option>
+                        <option value="20">ME</option>
+                        <option value="21">MD</option>
+                        <option value="22">MA</option>
+                        <option value="23">MI</option>
+                        <option value="24">MN</option>
+                        <option value="25">MS</option>
+                        <option value="26">MO</option>
+                        <option value="27">MT</option>
+                        <option value="28">NE</option>
+                        <option value="29">NV</option>
+                        <option value="30">NH</option>
+                        <option value="31">NJ</option>
+                        <option value="32">NM</option>
+                        <option value="33">NY</option>
+                        <option value="34">NC</option>
+                        <option value="35">ND</option>
+                        <option value="36">OH</option>
+                        <option value="37">OK</option>
+                        <option value="38">OR</option>
+                        <option value="39">PA</option>
+                        <option value="40">RI</option>
+                        <option value="41">SC</option>
+                        <option value="42">SD</option>
+                        <option value="43">TN</option>
+                        <option value="44">TX</option>
+                        <option value="45">UT</option>
+                        <option value="46">VT</option>
+                        <option value="47">VA</option>
+                        <option value="48">WA</option>
+                        <option value="49">WV</option>
+                        <option value="50">WI</option>
+                        <option value="51">WY</option>
+                        <option value="52">--</option>
+                        <option value="53">AB</option>
+                        <option value="54">BC</option>
+                        <option value="55">MB</option>
+                        <option value="56">NB</option>
+                        <option value="57">NL</option>
+                        <option value="58">NT</option>
+                        <option value="59">NS</option>
+                        <option value="60">NU</option>
+                        <option value="61">ON</option>
+                        <option value="62">PE</option>
+                        <option value="63">QC</option>
+                        <option value="64">SK</option>
+                        <option value="65">YT</option>
+                        <option value="66">--</option>                  
+                    </select>
+                    </div>
+                    <div class="formSection">
+                        <label for="payscale_report_years_of_experience"><span class="requiredItem">*</span> Years of Experience:</label>
+                        <input class="textInput" id="payscale_report_years_of_experience" maxlength="3" name="payscale_report[years_of_experience]" size="3" type="text" value="" data-validate="validate(required)">
+                        <span class="helperText">Estimate the total years of experience in the field your desired candidate would have.</span>
+                    </div>
+                    <div class="formSection">
+                        <label for="payscale_report_email_address"><span class="requiredItem">*</span> Email Address:</label>
+                        <input class="textInput" id="payscale_report_email_address" name="payscale_report[email_address]" size="30" type="email" value="" data-validate="validate(required, email)">
+                        <span class="helperText">Email address where complete PayScale report should be sent.</span>
+                    </div>                   
+                    <div class="formSection">
+                        <input class="cancelLink" type="reset" value="Cancel"/>
+                        <input id="submit_button" class="btn-primary" type="submit" value="Submit"> 
+                    </div>                
+                </fieldset>
+            </form>
+        </main>
+        <!-- Right Sidebar -->    
+        <aside class="col-sm-3 rightSidebar">     
+            <section class="orderSummary">
+                <h2>Order Summary</h2>
+                <table class="orderTable">          
+                    <thead>
+                        <tr>
+                            <th>Qty</th>
+                            <th>Product</th>
+                            <th>Price</th>
+                        </tr>    
+                    </thead>    
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>PayScale Job Report</td>
+                      <td>$179.95</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <strong>Total charge:</strong>
+                      </td>
+                      <td>
+                        <strong>$179.95</strong>
+                      </td>
+                    </tr>
+                   </tbody>
+                </table>
+            </section>    
+        </aside>    
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="col-sm-12 omega">
+            <p class="footerCopy"> &copy; Hireology, Inc. 2013 - All rights reserved. <a href="#">Privacy Policy</a></p> 
+        </div>  
+    </footer>
+    </div> <!-- /container -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="javascripts/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="javascripts/bootstrap.js"></script>
+        <script type="text/javascript" src="javascripts/jquery.ketchup.all.min.js"></script>
+        <script type="text/javascript" src="javascripts/order-form.js"></script>   
+  </body>
+</html>
